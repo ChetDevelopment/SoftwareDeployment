@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sat Vichet | Full Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Khmer Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Moul&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">SatVichet</a>
+                <ul class="nav-links">
+                    <li><a href="#home" data-key="nav.home">Home</a></li>
+                    <li><a href="#skills" data-key="nav.skills">Skills</a></li>
+                    <li><a href="#tech" data-key="nav.technologies">Technologies</a></li>
+                    <li><a href="#projects" data-key="nav.projects">Projects</a></li>
+                    <li><a href="#experience" data-key="nav.experience">Experience</a></li>
+                    <li><a href="#tools" data-key="nav.tools">Tools</a></li>
+                    <li><a href="#contact" data-key="nav.contact">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <!-- Language Switcher -->
+                    <div class="language-switcher" id="languageSwitcher">
+                        <button class="current-language" id="currentLang">
+                            <span class="flag-icon">🇺🇸</span>
+                            <span class="lang-text">EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="language-dropdown" id="languageDropdown">
+                            <div class="language-option" data-lang="en">
+                                <span class="flag-icon">🇺🇸</span>
+                                <span class="lang-name">English</span>
+                            </div>
+                            <div class="language-option" data-lang="km">
+                                <span class="flag-icon">🇰🇭</span>
+                                <span class="lang-name">ខ្មែរ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section - Enhanced -->
+    <section id="home" class="hero">
+        <div class="containers">
+            <div class="hero-content">
+                <h1 data-key="hero.title">Hi, I'm <span class="highlight">Sat Vichet</span></h1>
+                <h2 data-key="hero.subtitle">Full Stack Developer & Web Solutions Architect</h2>
+                <p data-key="hero.description">I specialize in creating responsive, scalable web applications with
+                    modern technologies. With expertise in both frontend and backend development, I build complete
+                    digital solutions that deliver exceptional user experiences and business value.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>20+</h3>
+                        <p data-key="hero.projects">Projects Completed</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1+</h3>
+                        <p data-key="hero.years">Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p data-key="hero.satisfaction">Client Satisfaction</p>
+                    </div>
+                </div>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn" data-key="hero.viewWork">View My Work</a>
+                    <a href="#contact" class="btn btn-outline" data-key="hero.getInTouch">Get In Touch</a>
+                    <a href="#contact" class="btn btn-secondary" data-key="hero.downloadCV">Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-frame">
+                    <img src="/img/image.png" alt="Sat Vichet - Full Stack Developer" class="profile-pic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section - Enhanced -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 data-key="skills.title">My Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 data-key="skills.frontend.title">Frontend Development</h3>
+                    <p data-key="skills.frontend.description">Building responsive and interactive web applications using
+                        HTML5, CSS3, JavaScript (ES6+), React.js, Vue.js, and modern frameworks with a focus on
+                        performance optimization and cross-browser compatibility.</p>
+                    <div class="skill-tags">
+                        <span>React.js</span>
+                        <span>Vue.js</span>
+                        <span>TypeScript</span>
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 data-key="skills.backend.title">Backend Development</h3>
+                    <p data-key="skills.backend.description">Developing robust server-side applications and RESTful APIs
+                        using Node.js, Express.js, Python (Django/Flask), PHP (Laravel), and implementing
+                        authentication, authorization, and data validation.</p>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>Python</span>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 data-key="skills.database.title">Database Management</h3>
+                    <p data-key="skills.database.description">Designing and optimizing database schemas with SQL (MySQL,
+                        PostgreSQL) and NoSQL (MongoDB, Firebase) databases, implementing data modeling, indexing, and
+                        query optimization.</p>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>PostgreSQL</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 data-key="skills.deployment.title">DevOps & Deployment</h3>
+                    <p data-key="skills.deployment.description">Deploying applications using Docker, Kubernetes, AWS,
+                        and implementing CI/CD pipelines with GitHub Actions, Jenkins, and automated testing for
+                        production-ready applications.</p>
+                    <div class="skill-tags">
+                        <span>Docker</span>
+                        <span>AWS</span>
+                        <span>CI/CD</span>
+                        <span>Nginx</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 data-key="skills.responsive.title">Responsive Web Design</h3>
+                    <p data-key="skills.responsive.description">Creating mobile-first, responsive websites that work
+                        perfectly across all devices using CSS Grid, Flexbox, Bootstrap, and Tailwind CSS with
+                        accessibility best practices.</p>
+                    <div class="skill-tags">
+                        <span>CSS Grid</span>
+                        <span>Flexbox</span>
+                        <span>Bootstrap 5</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 data-key="skills.workflow.title">Development Workflow</h3>
+                    <p data-key="skills.workflow.description">Implementing agile development methodologies, version
+                        control with Git, code reviews, testing strategies (Unit, Integration, E2E), and documentation
+                        using industry best practices.</p>
+                    <div class="skill-tags">
+                        <span>Git/GitHub</span>
+                        <span>Agile/Scrum</span>
+                        <span>Jest/Testing</span>
+                        <span>Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section - Enhanced -->
+    <section id="tech" class="tech-section">
+        <div class="container">
+            <h2 data-key="tech.title">My Tech Stack</h2>
+            <div class="tech-grid">
+                <!-- Frontend Technologies -->
+                <div class="tech-category">
+                    <h3 data-key="tech.frontend">Frontend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-icon html-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML5</h4>
+                            <p>Semantic Markup</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon css-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h4>CSS3</h4>
+                            <p>Advanced Styling</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon js-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <p>ES6+ Features</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon react-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>React.js</h4>
+                            <p>Components & Hooks</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon vue-icon">
+                                <i class="fab fa-vuejs"></i>
+                            </div>
+                            <h4>Vue.js</h4>
+                            <p>Vue 3 Composition API</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Technologies -->
+                <div class="tech-category">
+                    <h3 data-key="tech.backend">Backend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-icon node-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h4>Node.js</h4>
+                            <p>Runtime Environment</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon express-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h4>Express.js</h4>
+                            <p>Web Framework</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon python-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <p>Django/Flask</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon php-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <h4>PHP</h4>
+                            <p>Laravel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="tech-category">
+                    <h3 data-key="tech.databases">Databases</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-icon mysql-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>MySQL</h4>
+                            <p>Relational Database</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon mongo-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h4>MongoDB</h4>
+                            <p>NoSQL Database</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon postgres-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>PostgreSQL</h4>
+                            <p>Advanced SQL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & DevOps -->
+                <div class="tech-category">
+                    <h3 data-key="tech.tools">Tools & DevOps</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-icon git-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h4>Git</h4>
+                            <p>Version Control</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon docker-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <h4>Docker</h4>
+                            <p>Containerization</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon aws-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <h4>AWS</h4>
+                            <p>Cloud Services</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon npm-icon">
+                                <i class="fab fa-npm"></i>
+                            </div>
+                            <h4>NPM/Yarn</h4>
+                            <p>Package Management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section - Enhanced -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 data-key="projects.title">Web Development Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/img/e-commerce.png" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <h3 data-key="projects.ecommerce.title">Full Stack E-commerce Platform</h3>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-key="projects.ecommerce.title">Modern E-commerce Platform</h3>
+                        <p data-key="projects.ecommerce.description">A complete e-commerce solution with user
+                            authentication, product management, shopping cart, payment integration (Stripe), and admin
+                            dashboard. Built with MERN stack (MongoDB, Express, React, Node.js).</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React.js</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Stripe API</span>
+                            <span class="project-tag">JWT Auth</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline" data-key="projects.liveDemo">Live Demo</a>
+                            <a href="#" class="btn btn-secondary" data-key="projects.github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/img/library.png" alt="CMS Platform">
+                        <div class="project-overlay">
+                            <h3 data-key="projects.cms.title">Custom CMS Platform</h3>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-key="projects.cms.title">Headless CMS Platform</h3>
+                        <p data-key="projects.cms.description">A customizable headless CMS for content management with
+                            rich text editor, media library, user roles, and RESTful API. Built with Vue.js, Node.js,
+                            and PostgreSQL.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Express.js</span>
+                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">JWT</span>
+                            <span class="project-tag">WebSockets</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline" data-key="projects.liveDemo">Live Demo</a>
+                            <a href="#" class="btn btn-secondary" data-key="projects.github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="project-card">
+                    <div class="project-img">
+                        <img src="/img/chat.png" alt="Social Media App">
+                        <div class="project-overlay">
+                            <h3 data-key="projects.social.title">Social Media Application</h3>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-key="projects.social.title">Real-time Social Media App</h3>
+                        <p data-key="projects.social.description">A feature-rich social media platform with real-time
+                            messaging, post sharing, likes, comments, and notifications using Socket.io, React, and
+                            MongoDB Atlas.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React.js</span>
+                            <span class="project-tag">Socket.io</span>
+                            <span class="project-tag">MongoDB Atlas</span>
+                            <span class="project-tag">Cloudinary</span>
+                            <span class="project-tag">Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline" data-key="projects.liveDemo">Live Demo</a>
+                            <a href="#" class="btn btn-secondary" data-key="projects.github">GitHub</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/img/buseiness.png" alt="Analytics Dashboard">
+                        <div class="project-overlay">
+                            <h3 data-key="projects.analytics.title">Real-time Analytics Dashboard</h3>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-key="projects.analytics.title">Business Analytics Dashboard</h3>
+                        <p data-key="projects.analytics.description">A real-time dashboard for business analytics with
+                            interactive charts, data visualization, and reporting features using D3.js, Chart.js, and
+                            Python backend.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">D3.js</span>
+                            <span class="project-tag">Chart.js</span>
+                            <span class="project-tag">Python Flask</span>
+                            <span class="project-tag">WebSockets</span>
+                            <span class="project-tag">Data Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline" data-key="projects.liveDemo">Live Demo</a>
+                            <a href="#" class="btn btn-secondary" data-key="projects.github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section - New -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 data-key="experience.title">Development Experience</h2>
+            <div class="timeline">
+                <!-- <div class="timeline-item">
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3 data-key="experience.current.title">Computer Science Club President</h3>
+                        <p data-key="experience.current.description">Developing custom web applications for various
+                            clients including e-commerce platforms, CMS systems, and business automation tools using
+                            modern web technologies.</p>
+                        <ul class="timeline-list">
+                            <li data-key="experience.current.point1">Built 20+ responsive websites with modern
+                                frameworks</li>
+                            <li data-key="experience.current.point2">Implemented RESTful APIs with Node.js and Express
+                            </li>
+                            <li data-key="experience.current.point3">Integrated third-party APIs (Payment, Social Media,
+                                Maps)</li>
+                            <li data-key="experience.current.point4">Optimized web performance achieving 90+ Lighthouse
+                                scores</li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3 data-key="experience.current.title">Computer Science Club President</h3>
+                        <p data-key="experience.current.description">Leading school's technology club, organizing coding
+                            workshops, and managing tech-related school events while mentoring fellow students in
+                            programming fundamentals.</p>
+                        <ul class="timeline-list">
+                            <li data-key="experience.current.point1">Organized school's first hackathon with 50+
+                                participants</li>
+                            <li data-key="experience.current.point2">Taught introductory Python and web development
+                                workshops</li>
+                            <li data-key="experience.current.point3">Developed school club website using HTML, CSS, and
+                                JavaScript</li>
+                            <li data-key="experience.current.point4">Collaborated with STEM teachers to enhance computer
+                                science curriculum</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <div class="timeline-content">
+                        <h3 data-key="experience.previous.title">Web Development Intern</h3>
+                        <p data-key="experience.previous.description">Worked on various web projects including internal
+                            tools, client websites, and participated in code reviews and agile development processes.
+                        </p>
+                        <ul class="timeline-list">
+                            <li data-key="experience.previous.point1">Collaborated with senior developers on large-scale
+                                projects</li>
+                            <li data-key="experience.previous.point2">Learned and implemented best practices in web
+                                development</li>
+                            <li data-key="experience.previous.point3">Contributed to open-source web development tools
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section - Enhanced -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 data-key="tools.title">Development Tools & Workflow</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3 data-key="tools.version.title">Version Control</h3>
+                        <p data-key="tools.version.description">Proficient in Git workflows including feature branching,
+                            pull requests, and code reviews using GitHub, GitLab, and Bitbucket for collaborative
+                            development.</p>
+                        <div class="tool-tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>GitLab</span>
+                            <span>Bitbucket</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3 data-key="tools.project.title">Project Management</h3>
+                        <p data-key="tools.project.description">Experience with agile methodologies using tools like
+                            Jira, Trello, and Asana for task management, sprint planning, and team collaboration.</p>
+                        <div class="tool-tags">
+                            <span>Jira</span>
+                            <span>Trello</span>
+                            <span>Asana</span>
+                            <span>ClickUp</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3 data-key="tools.testing.title">Testing & QA</h3>
+                        <p data-key="tools.testing.description">Implementing comprehensive testing strategies including
+                            unit tests, integration tests, and E2E testing using Jest, Cypress, and Selenium.</p>
+                        <div class="tool-tags">
+                            <span>Jest</span>
+                            <span>Cypress</span>
+                            <span>Selenium</span>
+                            <span>Postman</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3 data-key="tools.deployment.title">Deployment Tools</h3>
+                        <p data-key="tools.deployment.description">Experience with deployment automation using Docker,
+                            Kubernetes, AWS services, and CI/CD pipelines with GitHub Actions and Jenkins.</p>
+                        <div class="tool-tags">
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>AWS</span>
+                            <span>GitHub Actions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Development Process - New Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <h2 data-key="process.title">My Web Development Process</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 data-key="process.planning.title">Planning & Analysis</h3>
+                        <p data-key="process.planning.description">Requirements gathering, user stories, and technical
+                            specifications to ensure project alignment with business goals.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 data-key="process.design.title">UI/UX Design</h3>
+                        <p data-key="process.design.description">Wireframing, prototyping, and creating responsive
+                            designs that focus on user experience and accessibility.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 data-key="process.development.title">Development</h3>
+                        <p data-key="process.development.description">Agile development with clean code practices,
+                            regular commits, and code reviews for maintainable solutions.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 data-key="process.testing.title">Testing & Deployment</h3>
+                        <p data-key="process.testing.description">Comprehensive testing followed by CI/CD deployment to
+                            production with monitoring and maintenance plans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - Enhanced -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-key="contact.title">Let's Build Something Amazing</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 data-key="contact.collaborate">Ready to Start Your Project?</h3>
+                    <p data-key="contact.description">I'm currently available for freelance projects and full-time
+                        opportunities. Whether you need a complete web application, API integration, or consultation on
+                        your digital project, I'd love to help bring your ideas to life.</p>
+
+                    <div class="contact-cta">
+                        <h4 data-key="contact.cta.title">Why Work With Me?</h4>
+                        <ul class="contact-features">
+                            <li data-key="contact.feature1">Full stack development expertise</li>
+                            <li data-key="contact.feature2">Clean, maintainable code</li>
+                            <li data-key="contact.feature3">Responsive and mobile-first design</li>
+                            <li data-key="contact.feature4">SEO-friendly development</li>
+                            <li data-key="contact.feature5">Ongoing support and maintenance</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 data-key="contact.email">Email</h4>
+                            <p>vichet.sat@student.passerellesnumeriques.org</p>
+                            <p>satvichet.dev@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 data-key="contact.location">Location</h4>
+                            <p data-key="contact.city">Phnom Penh, Cambodia</p>
+                            <p data-key="contact.availability">Available for Remote Work Worldwide</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/ChetDevelopment" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://t.me/Vichet_SAT" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-codepen"></i>
+                            <span>CodePen</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-key="form.name">Name *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-key="form.email">Email *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project" data-key="form.project">Project Type</label>
+                            <select id="project" class="form-control">
+                                <option value="" data-key="form.selectDefault">Select project type</option>
+                                <option value="website" data-key="form.website">Website Development</option>
+                                <option value="webapp" data-key="form.webapp">Web Application</option>
+                                <option value="ecommerce" data-key="form.ecommerce">E-commerce Platform</option>
+                                <option value="api" data-key="form.api">API Development</option>
+                                <option value="consultation" data-key="form.consultation">Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget" data-key="form.budget">Project Budget (USD)</label>
+                            <select id="budget" class="form-control">
+                                <option value="" data-key="form.budgetDefault">Select budget range</option>
+                                <option value="<1000" data-key="form.budget1">Less than $1,000</option>
+                                <option value="1000-5000" data-key="form.budget2">$1,000 - $5,000</option>
+                                <option value="5000-10000" data-key="form.budget3">$5,000 - $10,000</option>
+                                <option value="10000+" data-key="form.budget4">$10,000+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-key="form.message">Project Details *</label>
+                            <textarea id="message" class="form-control" rows="5"
+                                placeholder="Describe your project requirements, timeline, and any specific technologies you're interested in..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn" data-key="form.send">Send Project Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Sat Vichet</h3>
+                <p data-key="footer.tagline">Full Stack Developer & Web Solutions Architect</p>
+                <p class="footer-description" data-key="footer.description">Creating innovative web solutions with
+                    modern technologies and best practices</p>
+            </div>
+            <div class="footer-links-container">
+                <div class="footer-column">
+                    <h4 data-key="footer.quickLinks">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-key="nav.home">Home</a></li>
+                        <li><a href="#skills" data-key="nav.skills">Skills</a></li>
+                        <li><a href="#projects" data-key="nav.projects">Projects</a></li>
+                        <li><a href="#contact" data-key="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-key="footer.services">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-key="footer.webdev">Web Development</a></li>
+                        <li><a href="#" data-key="footer.api">API Development</a></li>
+                        <li><a href="#" data-key="footer.ecommerce">E-commerce Solutions</a></li>
+                        <li><a href="#" data-key="footer.consulting">Technical Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-key="footer.technologies">Technologies</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-key="footer.react">React.js</a></li>
+                        <li><a href="#" data-key="footer.node">Node.js</a></li>
+                        <li><a href="#" data-key="footer.mongo">MongoDB</a></li>
+                        <li><a href="#" data-key="footer.python">Python</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="currentYear"></span> Sat Vichet. <span
+                        data-key="footer.rights">All rights reserved.</span></p>
+                <p class="footer-note" data-key="footer.built">Built with ❤️ using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Translation Data - Updated -->
+    <script>
+        const translations = {
+            en: {
+                // Navigation
+                "nav.home": "Home",
+                "nav.skills": "Skills",
+                "nav.technologies": "Technologies",
+                "nav.projects": "Projects",
+                "nav.experience": "Experience",
+                "nav.tools": "Tools",
+                "nav.contact": "Contact",
+
+                // Hero
+                "hero.title": "Hi, I'm <span class='highlight'>Sat Vichet</span>",
+                "hero.subtitle": "Full Stack Developer & Web Solutions Architect",
+                "hero.description": "I specialize in creating responsive, scalable web applications with modern technologies. With expertise in both frontend and backend development, I build complete digital solutions that deliver exceptional user experiences and business value.",
+                "hero.projects": "Projects Completed",
+                "hero.years": "Years Experience",
+                "hero.satisfaction": "Client Satisfaction",
+                "hero.viewWork": "View My Work",
+                "hero.getInTouch": "Get In Touch",
+                "hero.downloadCV": "Download CV",
+
+                // Skills
+                "skills.title": "My Expertise",
+                "skills.frontend.title": "Frontend Development",
+                "skills.frontend.description": "Building responsive and interactive web applications using HTML5, CSS3, JavaScript (ES6+), React.js, Vue.js, and modern frameworks with a focus on performance optimization and cross-browser compatibility.",
+                "skills.backend.title": "Backend Development",
+                "skills.backend.description": "Developing robust server-side applications and RESTful APIs using Node.js, Express.js, Python (Django/Flask), PHP (Laravel), and implementing authentication, authorization, and data validation.",
+                "skills.database.title": "Database Management",
+                "skills.database.description": "Designing and optimizing database schemas with SQL (MySQL, PostgreSQL) and NoSQL (MongoDB, Firebase) databases, implementing data modeling, indexing, and query optimization.",
+                "skills.deployment.title": "DevOps & Deployment",
+                "skills.deployment.description": "Deploying applications using Docker, Kubernetes, AWS, and implementing CI/CD pipelines with GitHub Actions, Jenkins, and automated testing for production-ready applications.",
+                "skills.responsive.title": "Responsive Web Design",
+                "skills.responsive.description": "Creating mobile-first, responsive websites that work perfectly across all devices using CSS Grid, Flexbox, Bootstrap, and Tailwind CSS with accessibility best practices.",
+                "skills.workflow.title": "Development Workflow",
+                "skills.workflow.description": "Implementing agile development methodologies, version control with Git, code reviews, testing strategies (Unit, Integration, E2E), and documentation using industry best practices.",
+
+                // Technologies
+                "tech.title": "My Tech Stack",
+                "tech.frontend": "Frontend",
+                "tech.backend": "Backend",
+                "tech.databases": "Databases",
+                "tech.tools": "Tools & DevOps",
+
+                // Projects
+                "projects.title": "Web Development Projects",
+                "projects.ecommerce.title": "Modern E-commerce Platform",
+                "projects.ecommerce.description": "A complete e-commerce solution with user authentication, product management, shopping cart, payment integration (Stripe), and admin dashboard. Built with MERN stack (MongoDB, Express, React, Node.js).",
+                "projects.cms.title": "Headless CMS Platform",
+                "projects.cms.description": "A customizable headless CMS for content management with rich text editor, media library, user roles, and RESTful API. Built with Vue.js, Node.js, and PostgreSQL.",
+                "projects.social.title": "Real-time Social Media App",
+                "projects.social.description": "A feature-rich social media platform with real-time messaging, post sharing, likes, comments, and notifications using Socket.io, React, and MongoDB Atlas.",
+                "projects.analytics.title": "Business Analytics Dashboard",
+                "projects.analytics.description": "A real-time dashboard for business analytics with interactive charts, data visualization, and reporting features using D3.js, Chart.js, and Python backend.",
+                "projects.liveDemo": "Live Demo",
+                "projects.github": "GitHub",
+
+                // Experience
+                "experience.title": "Development Experience",
+                "experience.current.title": "Freelance Full Stack Developer",
+                "experience.current.description": "Developing custom web applications for various clients including e-commerce platforms, CMS systems, and business automation tools using modern web technologies.",
+                "experience.current.point1": "Built 20+ responsive websites with modern frameworks",
+                "experience.current.point2": "Implemented RESTful APIs with Node.js and Express",
+                "experience.current.point3": "Integrated third-party APIs (Payment, Social Media, Maps)",
+                "experience.current.point4": "Optimized web performance achieving 90+ Lighthouse scores",
+                "experience.previous.title": "Web Development Intern",
+                "experience.previous.description": "Worked on various web projects including internal tools, client websites, and participated in code reviews and agile development processes.",
+                "experience.previous.point1": "Collaborated with senior developers on large-scale projects",
+                "experience.previous.point2": "Learned and implemented best practices in web development",
+                "experience.previous.point3": "Contributed to open-source web development tools",
+
+                // Tools
+                "tools.title": "Development Tools & Workflow",
+                "tools.version.title": "Version Control",
+                "tools.version.description": "Proficient in Git workflows including feature branching, pull requests, and code reviews using GitHub, GitLab, and Bitbucket for collaborative development.",
+                "tools.project.title": "Project Management",
+                "tools.project.description": "Experience with agile methodologies using tools like Jira, Trello, and Asana for task management, sprint planning, and team collaboration.",
+                "tools.testing.title": "Testing & QA",
+                "tools.testing.description": "Implementing comprehensive testing strategies including unit tests, integration tests, and E2E testing using Jest, Cypress, and Selenium.",
+                "tools.deployment.title": "Deployment Tools",
+                "tools.deployment.description": "Experience with deployment automation using Docker, Kubernetes, AWS services, and CI/CD pipelines with GitHub Actions and Jenkins.",
+
+                // Process
+                "process.title": "My Web Development Process",
+                "process.planning.title": "Planning & Analysis",
+                "process.planning.description": "Requirements gathering, user stories, and technical specifications to ensure project alignment with business goals.",
+                "process.design.title": "UI/UX Design",
+                "process.design.description": "Wireframing, prototyping, and creating responsive designs that focus on user experience and accessibility.",
+                "process.development.title": "Development",
+                "process.development.description": "Agile development with clean code practices, regular commits, and code reviews for maintainable solutions.",
+                "process.testing.title": "Testing & Deployment",
+                "process.testing.description": "Comprehensive testing followed by CI/CD deployment to production with monitoring and maintenance plans.",
+
+                // Contact
+                "contact.title": "Let's Build Something Amazing",
+                "contact.collaborate": "Ready to Start Your Project?",
+                "contact.description": "I'm currently available for freelance projects and full-time opportunities. Whether you need a complete web application, API integration, or consultation on your digital project, I'd love to help bring your ideas to life.",
+                "contact.cta.title": "Why Work With Me?",
+                "contact.feature1": "Full stack development expertise",
+                "contact.feature2": "Clean, maintainable code",
+                "contact.feature3": "Responsive and mobile-first design",
+                "contact.feature4": "SEO-friendly development",
+                "contact.feature5": "Ongoing support and maintenance",
+                "contact.email": "Email",
+                "contact.location": "Location",
+                "contact.city": "Phnom Penh, Cambodia",
+                "contact.availability": "Available for Remote Work Worldwide",
+
+                // Form
+                "form.name": "Name *",
+                "form.email": "Email *",
+                "form.project": "Project Type",
+                "form.selectDefault": "Select project type",
+                "form.website": "Website Development",
+                "form.webapp": "Web Application",
+                "form.ecommerce": "E-commerce Platform",
+                "form.api": "API Development",
+                "form.consultation": "Consultation",
+                "form.budget": "Project Budget (USD)",
+                "form.budgetDefault": "Select budget range",
+                "form.budget1": "Less than $1,000",
+                "form.budget2": "$1,000 - $5,000",
+                "form.budget3": "$5,000 - $10,000",
+                "form.budget4": "$10,000+",
+                "form.message": "Project Details *",
+                "form.send": "Send Project Inquiry",
+
+                // Footer
+                "footer.tagline": "Full Stack Developer & Web Solutions Architect",
+                "footer.description": "Creating innovative web solutions with modern technologies and best practices",
+                "footer.quickLinks": "Quick Links",
+                "footer.services": "Services",
+                "footer.webdev": "Web Development",
+                "footer.api": "API Development",
+                "footer.ecommerce": "E-commerce Solutions",
+                "footer.consulting": "Technical Consulting",
+                "footer.technologies": "Technologies",
+                "footer.react": "React.js",
+                "footer.node": "Node.js",
+                "footer.mongo": "MongoDB",
+                "footer.python": "Python",
+                "footer.rights": "All rights reserved.",
+                "footer.built": "Built with ❤️ using HTML, CSS & JavaScript"
+            },
+
+            km: {
+                // Navigation
+                "nav.home": "ទំព័រដើម",
+                "nav.skills": "ជំនាញ",
+                "nav.technologies": "បច្ចេកវិទ្យា",
+                "nav.projects": "គម្រោង",
+                "nav.experience": "បទពិសោធន៍",
+                "nav.tools": "ឧបករណ៍",
+                "nav.contact": "ទំនាក់ទំនង",
+
+                // Hero
+                "hero.title": "សួស្តី, ខ្ញុំឈ្មោះ <span class='highlight'>សាត វិចិត្ត</span>",
+                "hero.subtitle": "អ្នកអភិវឌ្ឍន៍ Full Stack & ស្ថាបត្យករដំណោះស្រាយគេហទំព័រ",
+                "hero.description": "ខ្ញុំឯកទេសក្នុងការបង្កើតកម្មវិធីគេហទំព័រឆ្លើយតប និងអាចពង្រីកបានជាមួយបច្ចេកវិទ្យាទំនើប។ ជាមួយនឹងជំនាញទាំងផ្នែក frontend និង backend ខ្ញុំសាងសង់ដំណោះស្រាយឌីជីថលពេញលេញដែលផ្តល់បទពិសោធន៍អ្នកប្រើប្រាស់ពិសេស និងតម្លៃអាជីវកម្ម។",
+                "hero.projects": "គម្រោងបានបញ្ចប់",
+                "hero.years": "ឆ្នាំបទពិសោធន៍",
+                "hero.satisfaction": "ការពេញចិត្តអតិថិជន",
+                "hero.viewWork": "មើលការងាររបស់ខ្ញុំ",
+                "hero.getInTouch": "ទំនាក់ទំនង",
+                "hero.downloadCV": "ទាញយក CV",
+
+                // Skills
+                "skills.title": "ជំនាញរបស់ខ្ញុំ",
+                "skills.frontend.title": "ការអភិវឌ្ឍន៍ Frontend",
+                "skills.frontend.description": "សាងសង់កម្មវិធីគេហទំព័រអន្តរកម្ម និងឆ្លើយតបដោយប្រើ HTML5, CSS3, JavaScript (ES6+), React.js, Vue.js និងក្របខ័ណ្ឌទំនើបដោយផ្តោតលើការបង្កើនប្រសិទ្ធភាពសមត្ថភាព និងភាពឆបគ្នានៃកម្មវិធីរុករក។",
+                "skills.backend.title": "ការអភិវឌ្ឍន៍ Backend",
+                "skills.backend.description": "អភិវឌ្ឍកម្មវិធីសាកល្បងផ្នែកម៉ាស៊ីនមេ និង RESTful APIs ដោយប្រើ Node.js, Express.js, Python (Django/Flask), PHP (Laravel) និងអនុវត្តការផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវ ការអនុញ្ញាត និងការផ្ទៀងផ្ទាត់ទិន្នន័យ។",
+                "skills.database.title": "ការគ្រប់គ្រងមូលដ្ឋានទិន្នន័យ",
+                "skills.database.description": "ការរចនា និងបង្កើនប្រសិទ្ធភាពសែមមូលដ្ឋានទិន្នន័យជាមួយ SQL (MySQL, PostgreSQL) និងមូលដ្ឋានទិន្នន័យ NoSQL (MongoDB, Firebase) អនុវត្តគំរូទិន្នន័យ ការធ្វើសន្និសីទ និងការបង្កើនប្រសិទ្ធភាពសំណួរ។",
+                "skills.deployment.title": "DevOps & ការដាក់ឱ្យដំណើរការ",
+                "skills.deployment.description": "ការដាក់ឱ្យដំណើរការកម្មវិធីដោយប្រើ Docker, Kubernetes, AWS និងអនុវត្តបំពង់បង្ហូរ CI/CD ជាមួយ GitHub Actions, Jenkins និងការសាកល្បងស្វ័យប្រវត្តិសម្រាប់កម្មវិធីដែលត្រៀមរួចសម្រាប់ផលិត។",
+                "skills.responsive.title": "ការរចនាគេហទំព័រឆ្លើយតប",
+                "skills.responsive.description": "បង្កើតគេហទំព័រដែលដំណើរការបានល្អឥតខ្ចោះនៅទូទាំងឧបករណ៍ទាំងអស់ដោយប្រើ CSS Grid, Flexbox, Bootstrap, និង Tailwind CSS ជាមួយនឹងការអនុវត្តដ៏ល្អបំផុតសម្រាប់ការចូលប្រើប្រាស់។",
+                "skills.workflow.title": "លំហូរការងារអភិវឌ្ឍន៍",
+                "skills.workflow.description": "អនុវត្តវិធីសាស្ត្រអភិវឌ្ឍន៍ Agile, ការគ្រប់គ្រងកំណែជាមួយ Git, ការពិនិត្យកូដ, យុទ្ធសាស្ត្រសាកល្បង (Unit, Integration, E2E) និងឯកសារដោយប្រើការអនុវត្តដ៏ល្អបំផុតនៅក្នុងឧស្សាហកម្ម។",
+
+                // Technologies
+                "tech.title": "បច្ចេកវិទ្យារបស់ខ្ញុំ",
+                "tech.frontend": "Frontend",
+                "tech.backend": "Backend",
+                "tech.databases": "មូលដ្ឋានទិន្នន័យ",
+                "tech.tools": "ឧបករណ៍ & DevOps",
+
+                // Projects
+                "projects.title": "គម្រោងអភិវឌ្ឍន៍គេហទំព័រ",
+                "projects.ecommerce.title": "វេទិកាពាណិជ្ជកម្មអេឡិចត្រូនិកទំនើប",
+                "projects.ecommerce.description": "ដំណោះស្រាយពាណិជ្ជកម្មអេឡិចត្រូនិកពេញលេញជាមួយការផ្ទៀងផ្ទាត់អ្នកប្រើប្រាស់ ការគ្រប់គ្រងផលិតផល រទេះទិញទំនិញ ការរួមបញ្ចូលការទូទាត់ (Stripe) និងផ្ទាំងគ្រប់គ្រង។ សាងសង់ជាមួយ MERN stack (MongoDB, Express, React, Node.js)។",
+                "projects.cms.title": "វេទិកា CMS Headless",
+                "projects.cms.description": "CMS headless ដែលអាចប្តូរប្រែបានសម្រាប់ការគ្រប់គ្រងមាតិកាជាមួយកម្មវិធីកែសម្រួលអត្ថបទសម្បូរបែប បណ្ណាល័យមេឌៀ តួនាទីអ្នកប្រើប្រាស់ និង RESTful API។ សាងសង់ជាមួយ Vue.js, Node.js, និង PostgreSQL។",
+                "projects.social.title": "កម្មវិធីបណ្តាញសង្គមពេលវេលាពិត",
+                "projects.social.description": "វេទិកាបណ្តាញសង្គមដ៏សម្បូរបែបជាមួយនឹងការផ្ញើសារពេលវេលាពិត ការចែករំលែកប្រកាស ការចូលចិត្ត មតិយោបល់ និងការជូនដំណឹងដោយប្រើ Socket.io, React, និង MongoDB Atlas។",
+                "projects.analytics.title": "ផ្ទាំងគ្រប់គ្រងវិភាគអាជីវកម្ម",
+                "projects.analytics.description": "ផ្ទាំងគ្រប់គ្រងពេលវេលាពិតសម្រាប់វិភាគអាជីវកម្មជាមួយតារាងអន្តរកម្ម ការធ្វើឱ្យមើលឃើញទិន្នន័យ និងមុខងាររាយការណ៍ដោយប្រើ D3.js, Chart.js, និង Python backend។",
+                "projects.liveDemo": "សាកល្បងផ្ទាល់",
+                "projects.github": "GitHub",
+
+                // Experience
+                "experience.title": "បទពិសោធន៍អភិវឌ្ឍន៍",
+                "experience.current.title": "អ្នកអភិវឌ្ឍន៍ Full Stack សេរី",
+                "experience.current.description": "ការអភិវឌ្ឍកម្មវិធីគេហទំព័រតាមតម្រូវការសម្រាប់អតិថិជនផ្សេងៗរួមមានវេទិកាពាណិជ្ជកម្មអេឡិចត្រូនិក ប្រព័ន្ធ CMS និងឧបករណ៍ស្វ័យប្រវត្តិកម្មអាជីវកម្មដោយប្រើបច្ចេកវិទ្យាគេហទំព័រទំនើប។",
+                "experience.current.point1": "សាងសង់គេហទំព័រឆ្លើយតប ២០+ ជាមួយក្របខ័ណ្ឌទំនើប",
+                "experience.current.point2": "អនុវត្ត RESTful APIs ជាមួយ Node.js និង Express",
+                "experience.current.point3": "បញ្ចូល APIs ភាគីទីបី (ការទូទាត់, បណ្តាញសង្គម, ផែនទី)",
+                "experience.current.point4": "បង្កើនប្រសិទ្ធភាពសមត្ថភាពគេហទំព័រដោយសម្រេចបានពិន្ទុ Lighthouse ៩០+",
+                "experience.previous.title": "អ្នកសិក្សាជំនាញអភិវឌ្ឍន៍គេហទំព័រ",
+                "experience.previous.description": "ធ្វើការលើគម្រោងគេហទំព័រផ្សេងៗរួមមានឧបករណ៍ខាងក្នុង គេហទំព័រអតិថិជន និងបានចូលរួមក្នុងការពិនិត្យកូដ និងដំណើរការអភិវឌ្ឍន៍ Agile។",
+                "experience.previous.point1": "សហការជាមួយអ្នកអភិវឌ្ឍន៍ជំនាន់ចាស់លើគម្រោងធំៗ",
+                "experience.previous.point2": "បានរៀន និងអនុវត្តការអនុវត្តដ៏ល្អបំផុតក្នុងការអភិវឌ្ឍន៍គេហទំព័រ",
+                "experience.previous.point3": "បានចូលរួមចំណែកដល់ឧបករណ៍អភិវឌ្ឍន៍គេហទំព័រប្រភពបើកចំហ",
+
+                // Tools
+                "tools.title": "ឧបករណ៍អភិវឌ្ឍន៍ & លំហូរការងារ",
+                "tools.version.title": "ការគ្រប់គ្រងកំណែ",
+                "tools.version.description": "ឆ្លាតវៃក្នុងលំហូរការងារ Git រួមមានការបែងចែកលក្ខណៈពិសេស សំណើទាញ និងការពិនិត្យកូដដោយប្រើ GitHub, GitLab, និង Bitbucket សម្រាប់ការអភិវឌ្ឍន៍សហការ។",
+                "tools.project.title": "ការគ្រប់គ្រងគម្រោង",
+                "tools.project.description": "បទពិសោធន៍ជាមួយវិធីសាស្ត្រ Agile ដោយប្រើឧបករណ៍ដូចជា Jira, Trello, និង Asana សម្រាប់ការគ្រប់គ្រងភារកិច្ច ការរៀបចំ sprint និងការសហការក្រុម។",
+                "tools.testing.title": "ការសាកល្បង & គុណភាព",
+                "tools.testing.description": "អនុវត្តយុទ្ធសាស្ត្រសាកល្បងដ៏ទូលំទូលាយរួមមានការសាកល្បងឯកតា ការសាកល្បងរួមបញ្ចូលគ្នា និងការសាកល្បង E2E ដោយប្រើ Jest, Cypress, និង Selenium។",
+                "tools.deployment.title": "ឧបករណ៍ដាក់ឱ្យដំណើរការ",
+                "tools.deployment.description": "បទពិសោធន៍ជាមួយការស្វ័យប្រវត្តិកម្មការដាក់ឱ្យដំណើរការដោយប្រើ Docker, Kubernetes, សេវាកម្ម AWS, និងបំពង់បង្ហូរ CI/CD ជាមួយ GitHub Actions និង Jenkins។",
+
+                // Process
+                "process.title": "ដំណើរការអភិវឌ្ឍន៍គេហទំព័ររបស់ខ្ញុំ",
+                "process.planning.title": "ការរៀបចំផែនការ & ការវិភាគ",
+                "process.planning.description": "ការប្រមូលតម្រូវការ រឿងអ្នកប្រើប្រាស់ និងលក្ខណៈបច្ចេកទេសដើម្បីធានាថាគម្រោងត្រូវគ្នាជាមួយគោលដៅអាជីវកម្ម។",
+                "process.design.title": "ការរចនា UI/UX",
+                "process.design.description": "ការបង្កើតគំនូរព្រាង គំរូប្រតិទិន និងការរចនាឆ្លើយតបដែលផ្តោតលើបទពិសោធន៍អ្នកប្រើប្រាស់ និងការចូលប្រើប្រាស់។",
+                "process.development.title": "ការអភិវឌ្ឍន៍",
+                "process.development.description": "ការអភិវឌ្ឍន៍ Agile ជាមួយការអនុវត្តកូដស្អាត ការបញ្ចូលទៅក្នុងប្រព័ន្ធទៀងទាត់ និងការពិនិត្យកូដសម្រាប់ដំណោះស្រាយដែលអាចថែទាំបាន។",
+                "process.testing.title": "ការសាកល្បង & ការដាក់ឱ្យដំណើរការ",
+                "process.testing.description": "ការសាកល្បងដ៏ទូលំទូលាយតាមដោយការដាក់ឱ្យដំណើរការ CI/CD ទៅការផលិតជាមួយនឹងផែនការតាមដាន និងថែទាំ។",
+
+                // Contact
+                "contact.title": "តោះសាងសង់អ្វីមួយដ៏អស្ចារ្យ",
+                "contact.collaborate": "ត្រៀមរួចសម្រាប់ចាប់ផ្តើមគម្រោងរបស់អ្នកហើយឬនៅ?",
+                "contact.description": "ខ្ញុំកំពុងមានលទ្ធភាពសម្រាប់គម្រោងសេរី និងឱកាសពេញម៉ោង។ ទោះបីជាអ្នកត្រូវការកម្មវិធីគេហទំព័រពេញលេញ ការរួមបញ្ចូល API ឬការពិគ្រោះយោបល់លើគម្រោងឌីជីថលរបស់អ្នក ខ្ញុំចង់ជួយបង្កើតគំនិតរបស់អ្នកឱ្យក្លាយជាការពិត។",
+                "contact.cta.title": "ហេតុអ្វីត្រូវធ្វើការជាមួយខ្ញុំ?",
+                "contact.feature1": "ជំនាញអភិវឌ្ឍន៍ Full Stack",
+                "contact.feature2": "កូដស្អាត អាចថែទាំបាន",
+                "contact.feature3": "ការរចនាឆ្លើយតប និងផ្តោតលើទូរស័ព្ទដៃ",
+                "contact.feature4": "ការអភិវឌ្ឍន៍ដែលមានភាពរួសរាយសម្រាប់ SEO",
+                "contact.feature5": "ការគាំទ្រ និងការថែទាំបន្ត",
+                "contact.email": "អ៊ីមែល",
+                "contact.location": "ទីតាំង",
+                "contact.city": "ភ្នំពេញ កម្ពុជា",
+                "contact.availability": "មានលទ្ធភាពសម្រាប់ការងារពីចម្ងាយទូទាំងពិភពលោក",
+
+                // Form
+                "form.name": "ឈ្មោះ *",
+                "form.email": "អ៊ីមែល *",
+                "form.project": "ប្រភេទគម្រោង",
+                "form.selectDefault": "ជ្រើសរើសប្រភេទគម្រោង",
+                "form.website": "ការអភិវឌ្ឍន៍គេហទំព័រ",
+                "form.webapp": "កម្មវិធីគេហទំព័រ",
+                "form.ecommerce": "វេទិកាពាណិជ្ជកម្មអេឡិចត្រូនិក",
+                "form.api": "ការអភិវឌ្ឍន៍ API",
+                "form.consultation": "ការពិគ្រោះយោបល់",
+                "form.budget": "ថវិកាគម្រោង (USD)",
+                "form.budgetDefault": "ជ្រើសរើសជួរថវិកា",
+                "form.budget1": "តិចជាង ១,០០០ ដុល្លារ",
+                "form.budget2": "១,០០០ - ៥,០០០ ដុល្លារ",
+                "form.budget3": "៥,០០០ - ១០,០០០ ដុល្លារ",
+                "form.budget4": "១០,០០០+ ដុល្លារ",
+                "form.message": "ព័ត៌មានលម្អិតអំពីគម្រោង *",
+                "form.send": "ផ្ញើសំណួរអំពីគម្រោង",
+
+                // Footer
+                "footer.tagline": "អ្នកអភិវឌ្ឍន៍ Full Stack & ស្ថាបត្យករដំណោះស្រាយគេហទំព័រ",
+                "footer.description": "ការបង្កើតដំណោះស្រាយគេហទំព័រច្នៃប្រឌិតជាមួយបច្ចេកវិទ្យាទំនើប និងការអនុវត្តដ៏ល្អបំផុត",
+                "footer.quickLinks": "តំណរហ័ស",
+                "footer.services": "សេវាកម្ម",
+                "footer.webdev": "ការអភិវឌ្ឍន៍គេហទំព័រ",
+                "footer.api": "ការអភិវឌ្ឍន៍ API",
+                "footer.ecommerce": "ដំណោះស្រាយពាណិជ្ជកម្មអេឡិចត្រូនិក",
+                "footer.consulting": "ការពិគ្រោះយោបល់បច្ចេកទេស",
+                "footer.technologies": "បច្ចេកវិទ្យា",
+                "footer.react": "React.js",
+                "footer.node": "Node.js",
+                "footer.mongo": "MongoDB",
+                "footer.python": "Python",
+                "footer.rights": "រក្សាសិទ្ធិគ្រប់យ៉ាង។",
+                "footer.built": "សាងសង់ដោយក្តីស្រឡាញ់ដោយប្រើ HTML, CSS & JavaScript"
+            },
+
+            // Other languages (zh, ja, ko, fr, es, de, vi) would follow similar structure
+            // For brevity, I'll show the structure but not all translations
+
+            zh: {
+                "nav.home": "首页",
+                "nav.skills": "技能",
+                "nav.technologies": "技术",
+                "nav.projects": "项目",
+                "nav.experience": "经验",
+                "nav.tools": "工具",
+                "nav.contact": "联系"
+            },
+
+            ja: {
+                "nav.home": "ホーム",
+                "nav.skills": "スキル",
+                "nav.technologies": "技術",
+                "nav.projects": "プロジェクト",
+                "nav.experience": "経験",
+                "nav.tools": "ツール",
+                "nav.contact": "お問い合わせ"
+            },
+
+            ko: {
+                "nav.home": "홈",
+                "nav.skills": "기술",
+                "nav.technologies": "기술",
+                "nav.projects": "프로젝트",
+                "nav.experience": "경험",
+                "nav.tools": "도구",
+                "nav.contact": "연락처"
+            },
+
+            fr: {
+                "nav.home": "Accueil",
+                "nav.skills": "Compétences",
+                "nav.technologies": "Technologies",
+                "nav.projects": "Projets",
+                "nav.experience": "Expérience",
+                "nav.tools": "Outils",
+                "nav.contact": "Contact"
+            },
+
+            es: {
+                "nav.home": "Inicio",
+                "nav.skills": "Habilidades",
+                "nav.technologies": "Tecnologías",
+                "nav.projects": "Proyectos",
+                "nav.experience": "Experiencia",
+                "nav.tools": "Herramientas",
+                "nav.contact": "Contacto"
+            },
+
+            de: {
+                "nav.home": "Startseite",
+                "nav.skills": "Fähigkeiten",
+                "nav.technologies": "Technologien",
+                "nav.projects": "Projekte",
+                "nav.experience": "Erfahrung",
+                "nav.tools": "Werkzeuge",
+                "nav.contact": "Kontakt"
+            },
+
+            vi: {
+                "nav.home": "Trang chủ",
+                "nav.skills": "Kỹ năng",
+                "nav.technologies": "Công nghệ",
+                "nav.projects": "Dự án",
+                "nav.experience": "Kinh nghiệm",
+                "nav.tools": "Công cụ",
+                "nav.contact": "Liên hệ"
+            }
+        };
+    </script>
+
+    <script>
+        // Your existing JavaScript code remains the same
+        // Language Switcher Functionality
+        const languageSwitcher = document.getElementById('languageSwitcher');
+        const currentLangBtn = document.getElementById('currentLang');
+        const languageDropdown = document.getElementById('languageDropdown');
+        const languageOptions = document.querySelectorAll('.language-option');
+
+        // Get saved language from localStorage or default to 'en'
+        let currentLanguage = localStorage.getItem('language') || 'en';
+
+        // Language flags mapping
+        const languageFlags = {
+            'en': '🇺🇸',
+            'km': '🇰🇭',
+            'zh': '🇨🇳',
+            'ja': '🇯🇵',
+            'ko': '🇰🇷',
+            'fr': '🇫🇷',
+            'es': '🇪🇸',
+            'de': '🇩🇪',
+            'vi': '🇻🇳'
+        };
+
+        // Language names mapping
+        const languageNames = {
+            'en': 'English',
+            'km': 'ខ្មែរ',
+            'zh': '中文',
+            'ja': '日本語',
+            'ko': '한국어',
+            'fr': 'Français',
+            'es': 'Español',
+            'de': 'Deutsch',
+            'vi': 'Tiếng Việt'
+        };
+
+        // Toggle dropdown
+        currentLangBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            languageDropdown.classList.toggle('show');
+        });
+
+        // Handle language selection
+        languageOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const selectedLang = option.getAttribute('data-lang');
+                changeLanguage(selectedLang);
+                languageDropdown.classList.remove('show');
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!languageSwitcher.contains(e.target)) {
+                languageDropdown.classList.remove('show');
+            }
+        });
+
+        // Function to change language
+        function changeLanguage(lang) {
+            currentLanguage = lang;
+            localStorage.setItem('language', lang);
+
+            // Update UI
+            updateLanguageUI(lang);
+
+            // Update text content
+            updateTextContent(lang);
+
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+
+            // Apply Khmer font if selected
+            if (lang === 'km') {
+                document.body.classList.add('khmer-font');
+            } else {
+                document.body.classList.remove('khmer-font');
+            }
+        }
+
+        // Update language selector UI
+        function updateLanguageUI(lang) {
+            const flagSpan = currentLangBtn.querySelector('.flag-icon');
+            const langText = currentLangBtn.querySelector('.lang-text');
+
+            flagSpan.textContent = languageFlags[lang];
+            langText.textContent = lang.toUpperCase();
+        }
+
+        // Update all text content
+        function updateTextContent(lang) {
+            // Get translation for current language
+            const translation = translations[lang] || translations['en'];
+
+            // Update all elements with data-key attribute
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translation[key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.placeholder = translation[key];
+                    } else if (element.tagName === 'OPTION') {
+                        element.textContent = translation[key];
+                    } else {
+                        element.innerHTML = translation[key];
+                    }
+                }
+            });
+        }
+
+        // Initialize language on page load
+        function initLanguage() {
+            updateLanguageUI(currentLanguage);
+            updateTextContent(currentLanguage);
+            document.documentElement.lang = currentLanguage;
+
+            if (currentLanguage === 'km') {
+                document.body.classList.add('khmer-font');
+            }
+        }
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('i');
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+
+            if (document.body.classList.contains('dark-mode')) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        }
+
+        // Mobile Menu Toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Get the current language message
+            const message = currentLanguage === 'km'
+                ? 'សូមអរគុណសម្រាប់សាររបស់អ្នក! ខ្ញុំនឹងតបទៅអ្នកវិញឆាប់ៗនេះ។'
+                : 'Thank you for your message! I will get back to you soon.';
+            alert(message);
+            contactForm.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    if (window.innerWidth <= 768) {
+                        navLinks.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.skill-card, .project-card, .tool-card, .tech-item, .process-step, .timeline-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(el);
+        });
+
+        // Profile picture animation
+        const profilePic = document.querySelector('.profile-pic');
+        if (profilePic) {
+            profilePic.style.opacity = '0';
+            profilePic.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                profilePic.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                profilePic.style.opacity = '1';
+                profilePic.style.transform = 'scale(1)';
+            }, 300);
+        }
+
+        // Initialize language on page load
+        initLanguage();
+    </script>
+</body>
+
+</html>
